@@ -1,0 +1,101 @@
+// Colors
+$dark_cyan: hsl(158, 36%, 37%);
+$cream: hsl(30, 38%, 92%);
+$very_dark_blue: hsl(212, 21%, 14%);
+$dark_grayish_blue: hsl(228, 12%, 48%);
+$white: hsl(0, 0%, 100%);
+// Fonts
+$montserrat: 'Montserrat', sans-serif;
+$fraunces: 'Fraunces', serif;
+
+html {
+  font-size: 14px;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 32px 16px;
+  background-color: $cream;
+  color: $dark_grayish_blue;
+  font-family: $montserrat;
+}
+
+main {
+  background-color: $white;
+  border-radius: 8px;
+  overflow: hidden;
+
+  picture {
+    display: inline-flex;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 16px;
+
+    h2 {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 4px;
+    }
+
+    h1 {
+      color: $very_dark_blue;
+      font-size: 33px;
+      font-family: $fraunces;
+      line-height: 33px;
+    }
+
+    p {
+      line-height: 22px;
+    }
+
+    #prices {
+      display: flex;
+      margin-top: 12px;
+      margin-bottom: 8px;
+      gap: 16px;
+
+      #offer {
+        color: $dark_cyan;
+        font-family: $fraunces;
+        font-size: 33px;
+      }
+
+      #normal {
+        text-decoration: line-through;
+      }
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $dark_cyan;
+      color: $white;
+      font-family: $montserrat;
+      font-weight: 700;
+      width: 100%;
+      padding: 16px;
+      border-radius: 8px;
+      border: none;
+      gap: 8px;
+
+      span {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+html {
+  font-size: 14px;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 32px 16px;
+  background-color: hsl(30deg, 38%, 92%);
+  color: hsl(228deg, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 8px;
+  overflow: hidden;
+}
+main picture {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+main picture img {
+  width: 100%;
+}
+main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 24px;
+  gap: 16px;
+}
+main section h2 {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+main section h1 {
+  color: hsl(212deg, 21%, 14%);
+  font-size: 33px;
+  font-family: "Fraunces", serif;
+  line-height: 33px;
+}
+main section p {
+  line-height: 22px;
+}
+main section #prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  gap: 16px;
+}
+main section #prices #offer {
+  color: hsl(158deg, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-size: 33px;
+}
+main section #prices #normal {
+  text-decoration: line-through;
+}
+main section button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: hsl(158deg, 36%, 37%);
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  gap: 8px;
+}
+main section button span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}/*# sourceMappingURL=styles.css.map */
