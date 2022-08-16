@@ -17,17 +17,23 @@ h1, h2, p {
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
-  padding: 32px 16px;
   background-color: $cream;
   color: $dark_grayish_blue;
   font-family: $montserrat;
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   background-color: $white;
   border-radius: 8px;
   overflow: hidden;
+  margin: 32px 16px;
 
   picture {
     display: inline-flex;
@@ -35,6 +41,7 @@ main {
 
     img {
       width: 100%;
+      object-fit: cover;
     }
   }
 
@@ -43,6 +50,8 @@ main {
     flex-direction: column;
     padding: 24px;
     gap: 16px;
+    width: 100%;
+    box-sizing: border-box;
 
     h2 {
       font-size: 14px;
@@ -95,6 +104,35 @@ main {
       span {
         display: flex;
         align-items: center;
+      }
+    }
+  }
+}
+
+@media(min-width: 576px) and (max-width: 767px) {
+  main {
+    margin: 96px 64px;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+
+    picture {
+      width: 50%;
+    }
+
+    section {
+      width: 50%;
+      padding: 32px;
+      justify-content: space-between;
+
+      button:hover {
+        cursor: pointer;
+        background-color: hsl(157, 44%, 17%);
       }
     }
   }

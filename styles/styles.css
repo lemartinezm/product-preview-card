@@ -7,17 +7,34 @@ h1, h2, p {
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
   margin: 0;
-  padding: 32px 16px;
   background-color: hsl(30deg, 38%, 92%);
   color: hsl(228deg, 12%, 48%);
   font-family: "Montserrat", sans-serif;
 }
 
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 8px;
   overflow: hidden;
+  margin: 32px 16px;
 }
 main picture {
   display: -webkit-inline-box;
@@ -27,6 +44,8 @@ main picture {
 }
 main picture img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main section {
   display: -webkit-box;
@@ -38,6 +57,9 @@ main section {
           flex-direction: column;
   padding: 24px;
   gap: 16px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 main section h2 {
   font-size: 14px;
@@ -96,4 +118,36 @@ main section button span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  main {
+    margin: 96px 64px;
+  }
+}
+@media (min-width: 768px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 600px;
+  }
+  main picture {
+    width: 50%;
+  }
+  main section {
+    width: 50%;
+    padding: 32px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main section button:hover {
+    cursor: pointer;
+    background-color: hsl(157deg, 44%, 17%);
+  }
 }/*# sourceMappingURL=styles.css.map */
